@@ -1,0 +1,173 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue-Bold;\f1\fnil\fcharset0 HelveticaNeue;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid2\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid3\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li2160\lin2160 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid102\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid103\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li2160\lin2160 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww38200\viewh21600\viewkind0
+\deftab560
+\pard\pardeftab560\partightenfactor0
+
+\f0\b\fs34 \cf0 READ ME INSTRUCTIONS\
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+
+\f1\b0\fs24 \cf0 \
+\
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+
+\f0\b \cf0 Purpose:
+\f1\b0  performs relaxation and tissue correction for proton magnetic resonance spectroscopy data\
+
+\f0\b \
+You will need (inputs):
+\f1\b0  an excel sheet that contains...\
+-segmented tissue volume fractions (extracted using FSL or SPM12, which can be implemented with the Gannet CoRegStandAlone function in MatLab)\
+-raw signal data for NAA, tCr, tCho, Glu, Glx, Myo (for example, output quantification from LCModel)\
+  \
+To open the Jupyter Notebook, you can follow these steps:\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls1\ilvl0
+\f2\fs20 \cf0 {\listtext	\uc0\u8226 	}
+\f0\b\fs24 Install Anaconda (if not already installed)
+\f1\b0 :\
+\pard\tx1660\tx2160\pardeftab560\li2160\fi-2160\pardirnatural\partightenfactor0
+\ls1\ilvl2
+\f2\fs20 \cf0 {\listtext	
+\f3 \uc0\u8259 
+\f2 	}
+\f1\fs24 Visit the Anaconda website and download the appropriate version for your operating system (Windows, macOS, or Linux).\
+\ls1\ilvl2
+\f2\fs20 {\listtext	
+\f3 \uc0\u8259 
+\f2 	}
+\f1\fs24 Follow the installation instructions provided on the website for your specific operating system.\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls1\ilvl0
+\f2\fs20 \cf0 {\listtext	\uc0\u8226 	}
+\f0\b\fs24 Launch Anaconda Navigator
+\f1\b0 :\
+\pard\tx1660\tx2160\pardeftab560\li2160\fi-2160\pardirnatural\partightenfactor0
+\ls1\ilvl2
+\f2\fs20 \cf0 {\listtext	
+\f3 \uc0\u8259 
+\f2 	}
+\f1\fs24 After installation, you can find the Anaconda Navigator application in your Start menu (Windows) or in your Applications folder (macOS). Open it by clicking on the Anaconda Navigator icon.\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls1\ilvl0
+\f2\fs20 \cf0 {\listtext	\uc0\u8226 	}
+\f0\b\fs24 Launch Jupyter Notebook
+\f1\b0 :\
+\pard\tx1660\tx2160\pardeftab560\li2160\fi-2160\pardirnatural\partightenfactor0
+\ls1\ilvl2
+\f2\fs20 \cf0 {\listtext	
+\f3 \uc0\u8259 
+\f2 	}
+\f1\fs24 Once Anaconda Navigator is open, you'll see a list of applications. Look for Jupyter Notebook and click on the "Launch" button below it.\
+\ls1\ilvl2
+\f2\fs20 {\listtext	
+\f3 \uc0\u8259 
+\f2 	}
+\f1\fs24 This will open a new tab or window in your default web browser with the Jupyter Notebook dashboard.\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls1\ilvl0
+\f2\fs20 \cf0 {\listtext	\uc0\u8226 	}
+\f0\b\fs24 Open the Jupyter Notebook (.ipynb) file
+\f1\b0 :\
+\pard\tx1660\tx2160\pardeftab560\li2160\fi-2160\pardirnatural\partightenfactor0
+\ls1\ilvl2
+\f2\fs20 \cf0 {\listtext	
+\f3 \uc0\u8259 
+\f2 	}
+\f1\fs24 Simply click on the name of the notebook file you wish to open. This action will launch the notebook and display its content in a new tab or window within the Jupyter Notebook interface.\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls1\ilvl0
+\f2\fs20 \cf0 {\listtext	\uc0\u8226 	}
+\f0\b\fs24 Alternatively, use Terminal/Command Prompt
+\f1\b0 :\
+\pard\tx1660\tx2160\pardeftab560\li2160\fi-2160\pardirnatural\partightenfactor0
+\ls1\ilvl2
+\f2\fs20 \cf0 {\listtext	
+\f3 \uc0\u8259 
+\f2 	}
+\f1\fs24 If you prefer using the command line, you can open a Jupyter Notebook directly from your Terminal (macOS/Linux) or Command Prompt (Windows).\
+\ls1\ilvl2
+\f2\fs20 {\listtext	
+\f3 \uc0\u8259 
+\f2 	}
+\f1\fs24 Navigate to the directory containing your Jupyter Notebook file using the cd command.\
+\ls1\ilvl2
+\f2\fs20 {\listtext	
+\f3 \uc0\u8259 
+\f2 	}
+\f1\fs24 Once in the correct directory, type jupyter notebook filename.ipynb and press Enter. Replace "filename.ipynb" with the name of your notebook file.\
+\ls1\ilvl2
+\f2\fs20 {\listtext	
+\f3 \uc0\u8259 
+\f2 	}
+\f1\fs24 This will open the specified notebook in your default web browser.\
+\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
+\cf0       \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf0 How to run the Jupiter Notebook:\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls2\ilvl0
+\f2\fs20 \cf0 {\listtext	\uc0\u8226 	}
+\f0\b\fs24 Step 1
+\f1\b0 \
+\pard\tx1660\tx2160\pardeftab560\li2160\fi-2160\pardirnatural\partightenfactor0
+\ls2\ilvl2
+\f2\fs20 \cf0 {\listtext	
+\f3 \uc0\u8259 
+\f2 	}
+\f1\fs24 Scroll down to the "Your Inputs" and fill in the required information\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls2\ilvl0
+\f2\fs20 \cf0 {\listtext	\uc0\u8226 	}
+\f0\b\fs24 Step 2
+\f1\b0 \
+\pard\tx1660\tx2160\pardeftab560\li2160\fi-2160\pardirnatural\partightenfactor0
+\ls2\ilvl2
+\f2\fs20 \cf0 {\listtext	
+\f3 \uc0\u8259 
+\f2 	}
+\f1\fs24 Under the \'93Cell\'94 tab, click \'93Run All\'94\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls2\ilvl0
+\f2\fs20 \cf0 {\listtext	\uc0\u8226 	}
+\f0\b\fs24 Step 3
+\f1\b0 \
+\pard\tx1660\tx2160\pardeftab560\li2160\fi-2160\pardirnatural\partightenfactor0
+\ls2\ilvl2
+\f2\fs20 \cf0 {\listtext	
+\f3 \uc0\u8259 
+\f2 	}
+\f1\fs24 Your tissue corrected outputs will be saved in the Excel sheet your set as your data output file path as 6 separate sheets called "NAA_TissueCorr", "Cr_TissueCorr", "Cho_TissueCorr", "Glu_TissueCorr", "Glx_TissueCorr", and "Myo_TissueCorr". Within each sheet there will be molal (mmol/kg) and molar (mmol/L) output with suffixes "_MolalAlpha" and "_MolarAlpha" for concentrations outputs with the recommended alpha correction (that accounts for differening concentrations of metabolites in GM and WM), noramlized to an 100% GM voxel. Suffixes "_MolalNorm" and "_MolarNorm" are alpha corrected but normalized to a 50% GM, 50% WM voxel. Suffixes "_MolalCSF" and "_MolarCSF" are CSF corrected as per Gasparovic et al (2018).\
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls2\ilvl0
+\f2\fs20 \cf0 {\listtext	\uc0\u8226 	}
+\f0\b\fs24 Step 4
+\f1\b0 \
+\pard\tx1660\tx2160\pardeftab560\li2160\fi-2160\pardirnatural\partightenfactor0
+\ls2\ilvl2
+\f2\fs20 \cf0 {\listtext	
+\f3 \uc0\u8259 
+\f2 	}
+\f1\fs24 Scroll down to the bottom of the sheet and see how your data performed with the recommended "Alpha correction" as per Leech et al (2024) compared to the conventional "CSF correction" by Gasparovic et al (2018) - the flatter the regression line, better! (i.e., insignificance in p-values, slopes close to 0, and low R\super 2\nosupersub  values can be interpreted as supporting evidence that concentration is independent of tissue composition). \
+\pard\pardeftab560\pardirnatural\partightenfactor0
+\ls2\ilvl0
+\f2\fs20 \cf0 {\listtext	\uc0\u8226 	}
+\f0\b\fs24 Step 5
+\f1\b0 \
+\pard\tx1660\tx2160\pardeftab560\li2160\fi-2160\pardirnatural\partightenfactor0
+\ls2\ilvl2
+\f2\fs20 \cf0 {\listtext	
+\f3 \uc0\u8259 
+\f2 	}
+\f1\fs24 If desired, play around with the alpha values. For example, if you have anteriorly located voxels, you may choose to use the anterior alpha values whereas if you have a mixture of voxels located throughout the brain, it might be best to keep the default values.\
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf0 \
+\
+\
+}
